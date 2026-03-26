@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>豆瓣快搜设置</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>豆瓣快搜</h1>
+    <p class="description">快速搜索豆瓣内容</p>
+
+    <div class="settings">
+      <div class="setting-item">
+        <label for="enabled">
+          <input type="checkbox" id="enabled">
+          <span class="label-text">启用豆瓣快搜</span>
+        </label>
+        <p class="setting-description">禁用后右键菜单将不显示搜索选项</p>
+      </div>
+
+      <div class="setting-item">
+        <label for="searchUrl">
+          <span class="label-text">搜索 URL</span>
+        </label>
+        <input type="text" id="searchUrl" placeholder="https://www.douban.com/search?q=">
+        <p class="setting-description">搜索词将自动添加到 URL 末尾</p>
+      </div>
+    </div>
+
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
